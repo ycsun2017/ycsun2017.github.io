@@ -11,6 +11,21 @@
     <link rel="icon" href="/files/favicon.ico">
     <script src="https://kit.fontawesome.com/abc80a1841.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="files/academicons/css/academicons.min.css"/>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .news-row {
+            height: 50px;
+            vertical-align: top;
+        }
+        .news-date {
+            color: blue;
+            white-space: nowrap;
+        }
+    </style>
+    
 </head>
 
 <body>
@@ -29,8 +44,9 @@
                 <div class="nav">
                     <ul>
                         <li class="current"><a href="index.html">Home</a></li>
-                        <li><a href="publications.html">Publications</a></li>
-                        <li><a href="files/CV_Yanchao_Sun.pdf">CV</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#pubs">Publications</a></li>
+                        <li><a href="files/CV_Yanchao_Sun_202507.pdf">CV</a></li>
                     </ul>
                 </div>
                 <div class="clear"></div>
@@ -89,84 +105,129 @@
                 <div class="divider line"></div>
 
 
-                <h3>News and Highlights</h3>
+                <h3 id="news">
+                    News and Highlights
+                    <a href="#top" style="font-size: 0.8em; margin-left: 10px;">Back to Top</a>
+                </h3>
                 <div>
                     <ul class="list square">
                         <table>
-
-                            <tr style="height:50px;">
-                                <td style="vertical-align: top;">
-                                    <font color="blue">[2023.7]&nbsp;&nbsp;&nbsp; </font>
-                                </td>
-                                <td style="vertical-align: top;"> 
-                                    Our paper about generalist agent has been accepted by ICCV 2023: <a href="https://arxiv.org/abs/2307.07909">Paper Link</a>.
-                                    <br>
+                            <tr class="news-row">
+                                <td class="news-date">[2025.3]</td>
+                                <td>
+                                    Our paper on token-level DPO was accepted by ICLR 2025. 
+                                    <a href="https://arxiv.org/abs/2410.04350">Paper Link.</a> 
+                                    Great work by our intern <a href="https://scholar.google.com/citations?user=UCOOmcEAAAAJ&hl=en">Aiwei Liu</a>!
                                 </td>
                             </tr>
 
-                            <tr style="height:50px;">
-                                <td style="vertical-align: top;">
-                                    <font color="blue">[2023.7]&nbsp;&nbsp;&nbsp; </font>
-                                </td>
-                                <td style="vertical-align: top;"> 
-                                    I am co-organizing the workshop
-                                    PerDream: PERception, Decision making and REAsoning through Multimodal foundational modeling in ICCV 2023. 
-                                    Check out our website: <a href="https://sites.google.com/view/perdream/home">Website</a>.
-                                    <br>
+                            <tr class="news-row">
+                                <td class="news-date">[2025.3]</td>
+                                <td>
+                                    I'm honored to give a talk at the <a href="https://en.wikipedia.org/wiki/Steve_Jobs_Theater">Steve Jobs Theater</a>! 
                                 </td>
                             </tr>
 
-                            <tr style="height:50px;">
-                                <td style="vertical-align: top;">
-                                    <font color="blue">[2023.1]&nbsp;&nbsp;&nbsp; </font>
-                                </td>
-                                <td style="vertical-align: top;"> 
-                                    We have 3 papers (1 <b>spotlight</b>, 2 posters) accepted by ICLR 2023! 
-                                    <br>
+                            <tr class="news-row">
+                                <td class="news-date">[2025.1]</td>
+                                <td>
+                                    My first paper at Apple, which presents an easy-to-use LLM Agent Benchmark, was accepted by NAACL 2025. Try it out at:
+                                    <a href="https://github.com/apple/axlearn/tree/main/docs/research/mmau">Project Page</a>.
                                 </td>
                             </tr>
 
-                            <tr style="height:50px;">
-                                <td style="vertical-align: top;">
-                                    <font color="blue">[2022.11]&nbsp;&nbsp;&nbsp; </font>
-                                </td>
-                                <td style="vertical-align: top;"> 
-                                    I am co-organizing the first workshop on Reincarnating RL</a> in ICLR 2023. 
-                                    Check out our website: <a href="https://reincarnating-rl.github.io/">reincarnating-rl.github.io</a>.
-                                    <br>
-                                </td>
-                            </tr>
-                            
-                            <tr style="height:50px;">
-                                <td style="vertical-align: top;">
-                                    <font color="blue">[2022.09]&nbsp;&nbsp;&nbsp; </font>
-                                </td>
-                                <td style="vertical-align: top;"> 
-                                    We have 3 papers accepted by NeurIPS 2022. Many thanks to my collaborators!
-                                    <br>
+                            <tr class="news-row">
+                                <td class="news-date">[2024.7]</td>
+                                <td>
+                                    Our paper on LLM agent with offline learning got accepted by the 1st COLM conference.
+                                    Thanks to all collaborators at JPMorgan!
+                                    <a href="https://arxiv.org/abs/2310.14403">Link</a>.
                                 </td>
                             </tr>
 
-                            <tr style="height:50px;">
-                                <td style="vertical-align: top;">
-                                    <font color="blue">[2022.01]&nbsp;&nbsp;&nbsp; </font>
-                                </td>
-                                <td style="vertical-align: top;"> 
-                                    Two of our papers have been accepted by ICLR 2022. Please check out our papers on <a href="https://openreview.net/forum?id=JM2kFbJvvI">adversarial RL</a> and <a href="https://openreview.net/forum?id=7KdAoOsI81C">transfer RL</a>.
-                                    <br>
-                                </td>
-                            </tr>
-        
-                            <tr style="height:50px;">
-                                <td style="vertical-align: top;">
-                                    <font color="blue">[2021.12]&nbsp;&nbsp;&nbsp; </font>
-                                </td>
-                                <td style="vertical-align: top;"> 
-                                    Our paper "Who Is the Strongest Enemy? Towards Optimal and Efficient Evasion Attacks in Deep RL" was honored to get the <b>Best Paper Award</b> of the <a href="https://sites.google.com/view/safe-robust-control/home">SafeRL 2021 Workshop</a>!
+                            <tr class="news-row">
+                                <td class="news-date">[2024.1]</td>
+                                <td>
+                                    We have 4 papers accepted by ICLR 2024: <a href="https://arxiv.org/abs/2402.12673">1 spotlight</a>
+                                    and 3 posters (<a href="https://arxiv.org/abs/2305.17342">paper 1</a>,
+                                    <a href="https://arxiv.org/abs/2310.07220">paper 2</a>,
+                                    <a href="https://arxiv.org/abs/2307.12062">paper 3</a>).
                                 </td>
                             </tr>
 
-                            <tr style="height:30px;">
+
+                            <tr class="news-row">
+                                <td class="news-date">[2023.9]</td>
+                                <td>
+                                    Two papers accepted by NeurIPS 2023: 
+                                    <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/7bd4a7d0e6773072c2e3c77b11d93065-Paper-Conference.pdf">1 spotlight</a>
+                                    and <a href="https://arxiv.org/abs/2306.13229">1 poster</a>.
+                                </td>
+                            </tr>
+
+                            <tr class="news-row">
+                                <td class="news-date">[2023.7]</td>
+                                <td>
+                                    Our paper about generalist agent has been accepted by ICCV 2023:
+                                    <a href="https://arxiv.org/abs/2307.07909">Paper Link</a>.
+                                </td>
+                            </tr>
+
+                            <tr class="news-row">
+                                <td class="news-date">[2023.7]</td>
+                                <td>
+                                    I am co-organizing the ICCV 2023 workshop <i>PerDream: PERception, DEcision making, and REAsoning through Multimodal foundational modeling</i>. 
+                                    Visit our <a href="https://sites.google.com/view/perdream/home">website</a> for details.
+                                </td>
+                            </tr>
+                              
+                            <tr class="news-row">
+                                <td class="news-date">[2023.1]</td>
+                                <td>
+                                    We have 3 papers accepted by ICLR 2023 — 
+                                    <a href="https://arxiv.org/abs/2301.09816">1 spotlight</a>
+                                    and 2 posters 
+                                    (<a href="https://arxiv.org/abs/2206.10158">paper 1</a>, 
+                                    <a href="https://arxiv.org/abs/2302.03015">paper 2</a>)!
+                                </td>
+                            </tr>
+                              
+                            <tr class="news-row">
+                                <td class="news-date">[2022.11]</td>
+                                <td>
+                                    I am co-organizing the first <i>Reincarnating RL</i> workshop at ICLR 2023.
+                                    Learn more at <a href="https://reincarnating-rl.github.io/">reincarnating-rl.github.io</a>.
+                                </td>
+                            </tr>
+                              
+                            <tr class="news-row">
+                                <td class="news-date">[2022.09]</td>
+                                <td>
+                                    Three of our papers were accepted to NeurIPS 2022. 
+                                    <a href="https://arxiv.org/abs/2211.00824"> 1 spotlight</a> and 2 posters
+                                    (<a href="https://arxiv.org/abs/2210.05927">paper 1</a>
+                                    <a href="https://arxiv.org/abs/2210.07636">paper 2</a>)
+                                </td>
+                            </tr>
+                              
+                            <tr class="news-row">
+                                <td class="news-date">[2022.01]</td>
+                                <td>
+                                    Two papers accepted to ICLR 2022! Check them out: 
+                                    <a href="https://openreview.net/forum?id=JM2kFbJvvI">adversarial RL</a> and 
+                                    <a href="https://openreview.net/forum?id=7KdAoOsI81C">transfer RL</a>.
+                                </td>
+                            </tr>
+                              
+                            <tr class="news-row">
+                                <td class="news-date">[2021.12]</td>
+                                <td>
+                                    Our paper <i>"Who Is the Strongest Enemy? Towards Optimal and Efficient Evasion Attacks in Deep RL"</i> received the 
+                                    <b>Best Paper Award</b> at the <a href="https://sites.google.com/view/safe-robust-control/home">SafeRL 2021 Workshop</a>!
+                                </td>
+                            </tr>
+
+                            <!-- <tr style="height:30px;">
                                 <td style="vertical-align: top;">
                                     <font color="blue">[2021.12]&nbsp;&nbsp;&nbsp; </font>
                                 </td>
@@ -182,16 +243,16 @@
                                 <td style="vertical-align: top;"> 
                                     Started a research internship at JPMorgan Chase & Co., under the supervision of <a href="https://www.linkedin.com/in/sumitra-ganesh-0379853">Dr. Sumitra Ganesh</a>.
                                 </td>
-                            </tr>
+                            </tr> -->
 
-                            <tr style="height:30px;">
+                            <!-- <tr style="height:30px;">
                                 <td style="vertical-align: top;">
                                     <font color="blue">[2021.01]&nbsp;&nbsp;&nbsp; </font>
                                 </td>
                                 <td style="vertical-align: top;"> 
                                     Our paper on <a href="https://openreview.net/forum?id=9r30XCjf5Dt">poisoning RL</a> was accepted by ICLR 2021.
                                 </td>
-                            </tr>
+                            </tr> -->
                             
         
                         </table>
@@ -203,11 +264,45 @@
                 <div class="divider line"></div>
 
 
-                <h3>Selected Publications</h3>
-                Please see <a href="publications.html">here</a> for a full list of my publications. <br><br>
+                <h3 id="pubs">
+                    Selected Publications
+                    <a href="#top" style="font-size: 0.8em; margin-left: 10px;">Back to Top</a>
+                </h3>
+                Please see <a href="https://scholar.google.com/citations?user=bloBY_QAAAAJ">here</a> for a full list of my publications. <br><br>
 
                 <div>
                     <table>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <font color="blue">NAACL 2025 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /><br /></font>
+                            </td>
+                            <td style="vertical-align: top;">
+                                <font size="+1">MMAU: A Holistic Benchmark of Agent Capabilities Across Diverse Domains.</font><br /><br />
+                                Guoli Yin*, Haoping Bai*, Shuang Ma*, Feng Nan, <b>Yanchao Sun</b>, et al.<br />
+                                <i>In Proceedings of the 2025 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL), 2025.</i>
+                                <br /><br />
+                                <a class="box" href="https://arxiv.org/abs/2407.18961">Paper</a>
+                                &nbsp;&nbsp;&nbsp;
+                                <a class="box" href="https://github.com/apple/axlearn/tree/main/docs/research/mmau">Code</a>
+                                &nbsp;&nbsp;&nbsp;
+                                <a class="box" href="https://github.com/apple/axlearn/tree/main/docs/research/mmau">HTML</a>
+                            <br /><br />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="vertical-align: top;">
+                              <font color="blue">COLM 2024 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /><br /></font>
+                            </td>
+                            <td style="vertical-align: top;">
+                              <font size="+1">O3D: Offline Data-driven Discovery and Distillation for Sequential Decision-Making with Large Language Models.</font><br /><br />
+                              Yuchen Xiao*, <b>Yanchao Sun*</b>, Mengda Xu, Udari Madhushani, Jared Vann, Deepeka Garg, and Sumitra Ganesh.<br />
+                              <i>In The 1st Conference on Language Modeling (COLM), 2024.</i><br />
+                              <i>*Equal Contribution</i><br /><br />
+                              <a class="box" href="https://arxiv.org/abs/2310.14403">Paper</a>
+                              <br /><br />
+                            </td>
+                          </tr>
 
                         <tr>
                             <td style="vertical-align: top;">
@@ -320,7 +415,7 @@
     
                     </table>
 
-                    Please see <a href="publications.html">here</a> for a full list of my publications. <br><br>
+                    Please see <a href="https://scholar.google.com/citations?user=bloBY_QAAAAJ">here</a> for a full list of my publications. <br><br>
 
 
                 </div>
